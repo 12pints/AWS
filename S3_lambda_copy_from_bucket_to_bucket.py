@@ -1,6 +1,6 @@
 # working 17 august 2021
 # this code is triggered by an S3 ObjetcPUT event.
-# as soon as the object is added to the source bucket, it will copy it to the destination bucket
+# as soon as the object is added to the source bucket, it will copy it to the destination bucket (danish-tst-backup-bucket)
 # source:  https://www.powerupcloud.com/copying-objects-using-aws-lambda-based-on-s3-events-part-1/
 
 import json
