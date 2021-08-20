@@ -4,6 +4,7 @@
 #copy to an s3 bucket, create a directory, and copy the files over
 #import environment variables, stored locally.
 #source https://www.youtube.com/watch?v=dqkoBrgFSus
+# described in :  https://ciscoshizzle.blogspot.com/2021/08/aws-boto3-s3-write-to-bucket-using-api.html
 
 import os
 import boto3
