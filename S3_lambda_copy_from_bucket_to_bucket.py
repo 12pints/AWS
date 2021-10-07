@@ -1,8 +1,10 @@
 # working 17 august 2021
 # this code is triggered by an S3 ObjetcPUT event.
-# as soon as the object is added to the source bucket, it will copy it to the destination bucket (danish-tst-backup-bucket)
+#  code is meant to be run in a lambda function that gets triggered by a putObject event
+# on the source bucket, based on this event the code below gets run and the file,
+# in the event will be copied to a destination bucket, essentially creating automatic replication of buckets
+# as soon as the object is added to the source bucket, it will copy it to the destination bucket
 # source:  https://www.powerupcloud.com/copying-objects-using-aws-lambda-based-on-s3-events-part-1/
-# described in: https://ciscoshizzle.blogspot.com/2021/08/aws-lambda-function-automatic-backup.html
 
 import json
 import boto3
